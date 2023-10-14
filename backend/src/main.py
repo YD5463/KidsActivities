@@ -17,7 +17,7 @@ async def main():
         allow_methods=["*"],
         allow_headers=["*"],
     )
-
+    # app.add_route()
     uvicorn_config = uvicorn.Config(
         app,
         host=config.host,
