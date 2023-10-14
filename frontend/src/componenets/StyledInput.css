@@ -1,0 +1,13 @@
+/* StyledInput.css */
+.styled-input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .styled-input:focus {
+    outline: none;
+    border-color: #007bff; /* Change the border color on focus */
+  }
+  
