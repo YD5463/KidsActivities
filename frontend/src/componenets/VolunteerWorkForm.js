@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import StyledButton from './StyledButton';
+import StyledInput from './StyledInput';
 
 function VolunteerWorkForm({ setVolunteerWorks }) {
   const [formData, setFormData] = useState({
@@ -26,39 +28,39 @@ function VolunteerWorkForm({ setVolunteerWorks }) {
     <div className="volunteer-work-form">
       <h2>Create New Volunteer Work</h2>
       <form>
-        <input
+        <StyledInput
           type="text"
           placeholder="Name"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
-        <input
+        <StyledInput
           type="text"
           placeholder="Description"
           value={formData.description}
           onChange={(e) => setFormData({ ...formData, description: e.target.value })}
         />
-        <input
+        <StyledInput
           type="text"
           placeholder="Location"
           value={formData.location}
           onChange={(e) => setFormData({ ...formData, location: e.target.value })}
         />
-        <input
+        <StyledInput
           type="text"
           placeholder="Skills Needed (comma-separated)"
           value={formData.skillsNeeded}
           onChange={(e) => setFormData({ ...formData, skillsNeeded: e.target.value.split(', ') })}
         />
-        <input
+        <StyledInput
           type="number"
           placeholder="Volunteers Needed"
           value={formData.volunteersNeeded}
           onChange={(e) => setFormData({ ...formData, volunteersNeeded: parseInt(e.target.value) })}
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <StyledButton type="button" onClick={handleFormSubmit}>
           Create Work
-        </button>
+        </StyledButton>
       </form>
     </div>
   );

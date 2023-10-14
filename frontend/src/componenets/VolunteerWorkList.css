@@ -1,0 +1,17 @@
+/* VolunteerWorkList.css */
+.volunteer-work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between cards */
+    justify-content: space-between; /* Ensure cards are evenly spaced in a row */
+    align-items: flex-start; /* Align cards to the top of each row */
+    margin: 0 -10px; /* Compensate for the negative margin on cards */
+  }
+  
+  /* Add media query to adjust layout for smaller screens */
+  @media (max-width: 767px) {
+    .volunteer-work-list {
+      flex-direction: column; /* On smaller screens, display cards in a single column */
+    }
+  }
+  
